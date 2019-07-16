@@ -8,8 +8,10 @@ public class IntegerUtils {
      * @param n integer value input by client
      * @return the sum of all integers between 0 and not including `n`
      */
-    public static Integer getSumOfN(Integer n) {
-        return null;
+    public static Integer getSumOfN(Integer val);
+
+        public Integer add ( int baseValue, int difference){
+        return baseValue + difference;
     }
 
     /**

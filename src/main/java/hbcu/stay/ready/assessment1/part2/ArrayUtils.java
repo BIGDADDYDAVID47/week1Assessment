@@ -30,9 +30,19 @@ public class ArrayUtils {
      * given an array of objects, named `objectArray` return the most frequently occuring object in the array
      */
     public static Object getMostCommon(Object[] objectArray) {
-        return null;
-    }
+        int i;
+        for (i = 0; i < n; i++)
+            if (array[i] == x)
+                break;
 
+        if (i < n) {
+
+            n = n - 1;
+            for (int j = i; j < n; j++)
+                array[j] = array[j + 1];
+        }
+        return n;
+    }
 
     /**
      * @param objectArray an array of any type of Object
